@@ -4,6 +4,10 @@
 - Rails version: `rails 7.1.1`
 - Database: `postgresql`
 
+## Test App
+
+- https://minesweeper-lqbd.onrender.com
+
 ## Installation
 
 - Install correct ruby version for our project: `rbenv local 3.2.2`
@@ -21,6 +25,7 @@
 - Check test coverage at `coverage/index.html`
 
 ## Screenshot
+
 ![image](https://github.com/ZaneTungLe/Minesweeper/assets/109327235/b9870cd5-fe59-4de1-a996-8c4f0de4daba)
 ![image](https://github.com/ZaneTungLe/Minesweeper/assets/109327235/6732277d-2a74-4894-b97e-7a1ddb5f9f5d)
 ![image](https://github.com/ZaneTungLe/Minesweeper/assets/109327235/36cfa9ad-b45e-4a9d-93ad-d08b1fb48c4c)
@@ -28,4 +33,5 @@
 ![image](https://github.com/ZaneTungLe/Minesweeper/assets/109327235/da5f140d-a2c0-497b-a1d2-b079cddbde91)
 
 ## Unit Test Result
+
 <img width="1170" alt="image" src="https://github.com/ZaneTungLe/Minesweeper/assets/109327235/8f77d812-8943-43a2-8c89-be2952b906a5">
