@@ -1,0 +1,12 @@
+.container
+  = link_to sanitize("&larr; Back to home"), mine_sweepers_path
+
+  .header
+    h1 Edit Board Game
+
+  = render "form", mine_sweeper: @mine_sweeper
+
+  div
+    = link_to "Show this mine sweeper", @mine_sweeper
+    |&nbsp;
+    = link_to "Back to mine sweepers", mine_sweepers_path

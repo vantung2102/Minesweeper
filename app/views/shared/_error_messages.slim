@@ -1,0 +1,9 @@
+- if resource.errors.any?
+  .error-message
+    .alert.alert-danger
+      | The form contains&nbsp;
+      = pluralize resource.errors.count, "error"
+      | .
+    ul
+      - resource.errors.full_messages.each do |msg|
+        li= msg

@@ -1,0 +1,18 @@
+main.container
+  .header
+    h1 Board Game
+    = link_to "New mine sweeper", new_mine_sweeper_path, class: "btn btn--primary"
+  .row.m-2
+    = search_form_for @q, html: { class: "form justify-content-end" } do |form|
+      = form.label :name
+      = form.search_field :name, class: "p-2"
+      = form.submit "Search", class: "btn btn--secondary"
+
+  = render @mine_sweepers
+
+  .row.m-2
+    .col-12
+      .float-left
+        = link_to "View all", view_all_mine_sweepers_path, class: "btn btn--secondary"
+      .float-right
+        == pagy_bootstrap_nav(@pagy)

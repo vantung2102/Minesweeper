@@ -1,0 +1,2 @@
+module MineSweepersHelper
+end

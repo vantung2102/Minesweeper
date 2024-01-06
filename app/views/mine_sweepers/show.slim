@@ -1,0 +1,18 @@
+main.container
+  = link_to sanitize("&larr; Back to Home"), mine_sweepers_path
+  .header
+    h1= @mine_sweeper.name
+  .row.mine_sweeper
+    .d-flex.flex-grow-1.justify-content-around
+      div
+        h2 Mines Number
+        .text-center
+          = @mine_sweeper.mines
+      div
+        h2 Width x Height
+        .text-center
+          = @mine_sweeper.width
+          | x
+          = @mine_sweeper.height
+
+  .board id="board_#{@mine_sweeper.id}" data={ controller: 'mine_sweeper', board: @mine_sweeper.board&.to_json, height: @mine_sweeper.height, width: @mine_sweeper.width }

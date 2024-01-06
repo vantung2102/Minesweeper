@@ -1,0 +1,6 @@
+main.container
+  .header
+    h1 Board Game
+    = link_to "New mine sweeper", new_mine_sweeper_path, class: "btn btn--primary"
+
+  = render @mine_sweepers

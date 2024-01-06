@@ -1,0 +1,20 @@
+= simple_form_for mine_sweeper, html: { class: "form" } do |form|
+  = render 'shared/error_messages', resource: mine_sweeper
+
+  .col-md-12
+    = form.input :name, input_html: { class: "form-control p-2" }
+
+  .col-md-12
+    = form.input :email, input_html: { class: "form-control p-2" }
+
+  .col-md-12
+    = form.input :width, input_html: { class: "form-control p-2" }
+
+  .col-md-12
+    = form.input :height, input_html: { class: "form-control p-2" }
+
+  .col-md-12
+    = form.input :mines, input_html: { class: "form-control p-2" }
+
+  .col-md-12
+    = form.submit class: "btn btn--secondary mt-4"

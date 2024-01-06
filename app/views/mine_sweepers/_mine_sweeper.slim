@@ -1,0 +1,9 @@
+.mine_sweeper
+  .d-flex.flex-grow-1.justify-content-around
+    = link_to mine_sweeper.name, mine_sweeper_path(mine_sweeper)
+    = link_to mine_sweeper.email
+    = link_to mine_sweeper.created_at.strftime("%Y-%m-%d")
+
+  .mine_sweeper__actions
+    = link_to "Edit", edit_mine_sweeper_path(mine_sweeper), class: "btn btn--light"
+    = button_to "Delete", mine_sweeper_path(mine_sweeper), method: :delete, class: "btn btn--light"
